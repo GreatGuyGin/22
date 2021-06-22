@@ -22,7 +22,7 @@
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <nav id="header" class="absolute w-full z-30 top-0 text-white">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
           <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
@@ -77,7 +77,7 @@
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center z-40">
-          <img class="w-full md:w-4/5 z-50" src="images/hero.jpg"/>
+          <img class="w-full md:w-4/5 z-50" display="absolute" src="images/hero.jpg" alt="lunette"/>
         </div>
       </div>
     </div>
@@ -110,13 +110,11 @@
         </div>
         <div class="flex flex-wrap">
           <div class="w-5/6 sm:w-1/2 p-6">
-            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Lorem ipsum dolor sit amet
-            </h3>
+           <div class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Lorem ipsum dolor sit amet</div>
             <p class="text-gray-600 mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-
-            </p>
+              </p></div>
           </div>
           <div class="w-full sm:w-1/2 p-6">
             <svg class="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
@@ -398,13 +396,11 @@
           </div>
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
-              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Lorem ipsum dolor sit amet
-              </h3>
+              <div< class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Lorem ipsum dolor sit amet</div>
               <p class="text-gray-600 mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-
-              </p>
+                </p></div>
             </div>
           </div>
         </div>
@@ -602,6 +598,28 @@
       <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
         Action!
       </button>
+      <div class="container-video">
+
+        <video src="ressources/video.mp4" class="video"></video>
+
+        <div class="controls">
+            <div class="barre-orange">
+                <div class="juice"></div>
+            </div>
+
+            <div class="buttons">
+                <button id="play-pause">
+                    <img src="ressources/play.svg">
+                </button>
+                <button id="mute">Mute</button>
+                <input type="range" id="volume-slider" min="0" max="100" value="50" step="1">
+                <button id="fullscreen">
+                    <img src="ressources/fullscreen.svg">
+                </button>
+            </div>
+        </div>
+
+    </div>
     </section>
     
     <!--Footer-->
