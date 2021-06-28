@@ -598,28 +598,6 @@
       <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
         Action!
       </button>
-      <div class="container-video">
-
-        <video src="ressources/video.mp4" class="video"></video>
-
-        <div class="controls">
-            <div class="barre-orange">
-                <div class="juice"></div>
-            </div>
-
-            <div class="buttons">
-                <button id="play-pause">
-                    <img src="ressources/play.svg">
-                </button>
-                <button id="mute">Mute</button>
-                <input type="range" id="volume-slider" min="0" max="100" value="50" step="1">
-                <button id="fullscreen">
-                    <img src="ressources/fullscreen.svg">
-                </button>
-            </div>
-        </div>
-
-    </div>
     </section>
     
     <!--Footer-->
