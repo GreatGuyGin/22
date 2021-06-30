@@ -6,6 +6,7 @@ const juice = document.querySelector('.juice')
 const muteBtn = document.getElementById('mute');
 const fullScreen = document.getElementById('fullscreen');
 const volumeSlider = document.getElementById('volume-slider');
+const contact = document.getElementById('navContact').onclick();
 
 btnPausePlay.addEventListener('click', togglePlayPause);
 video.addEventListener('click', togglePlayPause);
@@ -94,3 +95,33 @@ fullScreen.addEventListener('click', () => {
     video.requestFullscreen();
 })
 
+const btnContact = document.querySelector('.btn-Contact');
+
+
+//const formContact = document.querySelector('.form-contact');
+const emailContact = document.querySelector('.email-client');
+const mdpContact = document.querySelector('.message');
+
+
+btnContact.addEventListener('click', () => {
+
+    if(formContact.classList.contains('apparition')){
+        formContact.classList.remove('apparition');
+    }
+
+    formContact.classList.toggle('apparition');
+
+})
+
+
+formContact.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const mailValeur = emailContact.value;
+
+    auth.createUserWithEmailAndPassword(mailValeur).then(cred => {
+        console.log(cred);
+        formContact.reset();
+        formContact.classList.toggle('apparition');
+    })
+})
